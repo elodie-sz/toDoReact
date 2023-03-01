@@ -1,0 +1,130 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body { 
+  background-color: rgb(183, 107, 107);
+}
+
+h1 { 
+  color: rgb(6, 6, 84);
+}
+
+.app-list {
+  width: 70vw;
+  height: auto;
+  background-color: rgb(214, 231, 231);
+  border-radius: 20px;
+}
+
+.form-perso {
+  background-color: #bca8a8;
+  margin: 2vw;
+  border-radius: 20px;
+}
+
+input {
+  background-color: rgb(240, 219, 219);
+  color: rgb(2, 2, 18);
+  font-weight: bold;
+  border-radius: 20px;
+  height: 4vh;
+  border: 0;
+}
+
+#btnAjouter {
+  color: white;
+  font-weight: bold;
+  background-color: #7e2738aa;
+  margin-left: 5vw;
+  margin-top : 2vh;
+  margin-bottom: 2vh;
+  border-radius: 30px;
+}
+
+.todo {
+  color: rgb(8, 3, 38);
+  font-weight: bold;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 8px;
+  width: 90%;
+}
+
+.todo-text {
+  color: rgb(23, 2, 53);
+  margin-right: 2vw;
+}
+
+.todo-delete {
+  margin-bottom: 2vh;
+  color: #390303aa;
+  font-weight: bold;
+}
+
+.button:active {
+  transform: scale(0.95);
+  transition: 100ms background-color ease-in-out, 100ms transform;
+}
+
+.checkbox {
+  border: 2px solid var(--background-color-darker);
+  border-radius: 8px;
+  background-color: rgb(205, 182, 182);
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.checkbox:focus-within {
+  border-color: rgb(94, 41, 41);
+}
+
+.checkbox > input {
+  opacity: 50;
+  position: absolute;
+  inset: 0;
+}
